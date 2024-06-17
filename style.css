@@ -10,7 +10,8 @@
   background: #56baed;
 }
 body{
-  background: black;
+  background: url('animation.gif') no-repeat center center fixed;
+  background-size: cover;
 }
 .select-box, .play-board, .result-box{
   position: absolute;
@@ -20,9 +21,9 @@ body{
   transition: all 0.3s ease;
 }
 .select-box{
-  background: hsl(244, 73%, 53%);
-  padding: 20px 25px 25px;
-  border-radius: 5px;
+  background: hsl(246, 97%, 49%);
+  padding: 25px 25px 25px;
+  border-radius: 15px;
   max-width: 400px;
   width: 100%;
 }
@@ -53,7 +54,7 @@ body{
   border: none;
   background: greenyellow;
   border-radius: 5px;
-  color: hsl(244, 73%, 53%);
+  color: hsl(246, 97%, 49%);
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -75,7 +76,7 @@ body{
   font-weight: 500;
 }
 .select-box .credit a{
-  color: hsl(244, 73%, 53%);
+  color: hsl(246, 97%, 49%);
   text-decoration: none;
 }
 .select-box .credit a:hover{
@@ -95,7 +96,7 @@ body{
 .play-board .details{
   padding: 7px;
   border-radius: 5px;
-  background: hsl(244, 73%, 53%);
+  background: hsl(246, 97%, 49%);
 }
 .play-board .players{
   width: 100%;
@@ -164,7 +165,7 @@ body{
   line-height: 80px;
   text-align: center;
   border-radius: 5px;
-  background: hsl(244, 73%, 53%);
+  background: hsl(246, 97%, 49%);
 }
 
 .result-box{
@@ -174,7 +175,7 @@ body{
   width: 100%;
   opacity: 0;
   text-align: center;
-  background: hsl(244, 73%, 53%);
+  background: hsl(246, 97%, 49%);
   pointer-events: none;
   transform: translate(-50%, -50%) scale(0.9);
 }
@@ -188,10 +189,12 @@ body{
   font-weight: 500;
   display: flex;
   justify-content: center;
+  color: cyan;
 }
 .result-box .won-text p{
   font-weight: 600;
   margin: 0 5px;
+  color: greenyellow;
 }
 .result-box .btn{
   width: 100%;
@@ -206,7 +209,7 @@ body{
   border: none;
   background: greenyellow;
   border-radius: 5px;
-  color: hsl(244, 73%, 53%);
+  color: hsl(246, 97%, 49%);
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;

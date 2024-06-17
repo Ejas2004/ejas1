@@ -13,7 +13,7 @@ body{
   background: url('animation.gif') no-repeat center center fixed;
   background-size: cover;
 }
-.select-box, .play-board, .result-box{
+.select-box, .play-board, .result-box, .score-board{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -81,6 +81,23 @@ body{
 }
 .select-box .credit a:hover{
   text-decoration: underline;
+}
+
+.score-board{
+  top: 10%;
+  background: hsl(246, 97%, 49%);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: greenyellow;
+  font-size: 20px;
+  font-weight: 500;
+}
+.score-board .score span {
+  margin: 0 10px;
 }
 
 .play-board{
